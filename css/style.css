@@ -105,3 +105,30 @@ section .home1 img#moon{
 .sosmed ul li:hover span{
     opacity: 1;
 }
+
+.navbar-nav {
+    padding-right:50px;
+}
+section#info, section#about{
+    padding:50px 0px;
+    color:white;
+}
+.nav-item {
+    padding-right: 20px;
+}
+.container-fluid a, #navbarNav a {
+  color:white;
+}
+.card-body {
+  color:black;
+}
+.container img{
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  transition: 1s;
+  cursor:url('')
+}
+.coba:hover{
+  transform: scale(1.1);
+}
