@@ -1,111 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 body{
     min-height: 100vh;
-    background: linear-gradient(#2b1055,#7597de);
+    background: linear-gradient(#7597de,#2b1055);
 }
-section .home1{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    padding: 100px;
-
-}
-section .home1 img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-section .home1 img#moon{
-    mix-blend-mode: screen;
-}
-.sosmed ul{
-    position: relative;
-    transform: skewY(-15deg);
-}
-.sosmed ul li{
-    position: relative;
-    list-style: none;
-    width: 120px;
-    background: #3e3f46;
-    padding: 15px;
-    transition: 0.5s;
-    z-index: calc(1 * var(--i));
-}
-.sosmed ul li:hover{
-    transform: translateX(-50px);
-    background: var(--clr);
-}
-.sosmed ul li::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -40px;
-    width: 40px;
-    height: 100%;
-    background: #3e3f46;
-    filter: brightness(0.7);
-    transform-origin: right;
-    transform: skewY(45deg);
-    transition: 0.5s;
-}
-.sosmed ul li:hover::before{
-    background: var(--clr);
-    filter: brightness(0.7);
-}
-
-.sosmed ul li::after{
-    content: '';
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: #3e3f46;
-    filter: brightness(0.9);
-    transform-origin: bottom;
-    transform: skewX(45deg);
-    transition: 0.5s;
-}
-.sosmed ul li:hover::after{
-    background: var(--clr);
-    filter: brightness(0.9);
-}
-.sosmed ul li a{
-    text-decoration: none;
-    color: #999;
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-}
-.sosmed ul li :hover a{
-    color: #fff;
-}
-.sosmed ul li:last-child::after{
-    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0, 25);
-}
-.sosmed ul li span{
-    position: absolute;
-    top: 0;
-    left: -40px;
-    width: 40px;
-    height: 100%;
-    transform-origin: right;
-    transform: skewY(45deg);
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.5;
-    font-size: 1.25em;
-}
-.sosmed ul li:hover span{
-    opacity: 1;
-}
-
 .navbar-nav {
     padding-right:50px;
 }
@@ -132,3 +29,106 @@ section#info, section#about{
 .coba:hover{
   transform: scale(1.1);
 }
+.sosmed .btn1{
+    display: inline-block;
+    width: 10px;
+    width: 60px;
+    background:#fff;
+    box-shadow: 0 5px 15px -5px #aaa;
+    margin: 5px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+    color: #42d2ff;
+}
+.sosmed .btn1 i {
+    position: relative;
+    z-index: 4;
+    line-height: 90px;
+    font-size: 36px;
+    transition: 0.3 ease-in-out;
+}
+.sosmed .btn1::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-Gradient(#00c6ff, #0072ff);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.sosmed .btn1:hover i {
+    color: #fff;
+    transform: scale(1.3);
+}
+.sosmed .btn1:hover::before{
+    animation: onHover 0.7s 1;
+    left: -10%;
+    top: -10%;
+}
+@keyframes onHover {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* carausel buttom*/
+.card-buttom{
+    border: none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  }
+  .carousel-buttom{
+    padding: 1em;
+  }
+  .kembali,
+  .selanjutnya{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .kembali span,
+  .selanjutnya span{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  @media screen and (min-width:568px){
+    .cards-wraper{
+    display: flex;
+  }
+  .card-buttom{
+    margin: 0.5em;
+    width: calc(100%/3);
+  }
+  .image-wraper{
+    height: 22vw;
+    margin: 0 auto;
+    /*display: flex ;
+    align-items: center;
+    justify-content: center;*/
+  }
+  }
+  @media screen and (max-width: 567px){
+    .card-buttom:not(:first-child){
+      display:none;
+    }
+  }
+  .image-wraper img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /*akhir carousel buttom*/

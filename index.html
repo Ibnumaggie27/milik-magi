@@ -10,7 +10,7 @@
     <title>website</title>
     <style>
 .aboutkiri h3{
-  margin-left:135px;
+  margin-bottom: 30px;
 }
 .aboutkiri img{
   margin-left:35px;
@@ -21,6 +21,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+.carousel-item img {
+            height:100vh;
+        }
 
     </style>
 </head>
@@ -57,161 +61,254 @@
     <!--akhir dari navbar-->
     
     <!--home-->
-    <section id="home">
-      <section class="home1">
-        <img src="/assets/stars.png" id="start">
-        <img src="/assets/moon.png" id="moon">
-        <img src="/assets/mountains_behind.png" id="mountains_behind">
-        <img src="/assets/mountains_front.png" id="mountains_front">
-      </section>
-    </section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/bromo.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/rinjani.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/semeru.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!--akhir dari home-->
     
     <!--info-->
     <section id="info">
-      <div class="container">
         <h1 class="text-center" style="padding-bottom:50px;">Information</h1>
         <div class="coba1">
         <div class="row">
-            <div class="col-md-4 g-4">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title text-center">Pertama</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="modala text-center">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Launch demo modal
-                    </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-scrollable">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="col-md-4 g-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center">SENDIRI</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="modala text-center">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="container">
+                            <form>
+                              <div class="form-grup">
+                                <label>nama lengkap</label>
+                                <input type="text" name="" class="form-control" placeholder="masukan nama lengkap anda">
+                              </div>
+          
+                              <div class="form-grup">
+                                <label>email</label>
+                                <input type="email" name="" class="form-control" placeholder="masukan email anda">
+                              </div>
+          
+                              <div class="form-grup">
+                                <label>tanggal pesan</label>
+                                <input type="date" name="" class="form-control">
+                              </div>
+          
+                              <div class="form-grup">
+                                <label>tiket</label>
+                                <input type="text" name="" class="form-control" placeholder="jumlah tiket">
+                              </div>
+
+                              <div class="form-grup">
+                                <label>catatan(bila di perlukan)</label>
+                                <textarea  class="form-control" rows="5"></textarea>
+                              </div>
+                            </form>
                           </div>
-                          <div class="modal-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, exercitationem commodi accusamus unde assumenda, atque quia nihil dolore, similique suscipit alias sint voluptates enim rerum distinctio ad? Minus, labore dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, qui dicta minus culpa tempore suscipit minima labore quas, ratione molestias, numquam consequatur iusto praesentium! Velit accusamus atque neque? Placeat, perspiciatis?
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ducimus quibusdam veritatis corrupti culpa ut omnis quidem rem nisi libero molestias, tempore ratione voluptas rerum aperiam deserunt adipisci impedit voluptatum.
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore odit doloremque obcaecati optio excepturi ipsa, ex totam maxime ratione neque tenetur. Dolorem aut magni quos officia atque earum dignissimos.
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat, voluptate hic in itaque nemo magni? Autem, voluptatibus eaque, recusandae praesentium rem dolorum labore voluptate ullam laborum molestiae nesciunt non!
-                            </p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                  </div>
+              </div>
                 </div>
-                <div class="col-md-4 g-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Kedua</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="modala text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Launch demo modal
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="col-md-4 g-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title text-center">KELUARGA</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="modala text-center">
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="container">
+                                <form>
+                                  <div class="form-grup">
+                                    <label>nama lengkap</label>
+                                    <input type="text" name="" class="form-control" placeholder="masukan nama lengkap anda">
+                                  </div>
+              
+                                  <div class="form-grup">
+                                    <label>email</label>
+                                    <input type="email" name="" class="form-control" placeholder="masukan email anda">
+                                  </div>
+              
+                                  <div class="form-grup">
+                                    <label>tanggal pesan</label>
+                                    <input type="date" name="" class="form-control">
+                                  </div>
+              
+                                  <div class="form-grup">
+                                    <label>tiket</label>
+                                    <input type="text" name="" class="form-control" placeholder="jumlah tiket">
+                                  </div>
+
+                                  <div class="form-grup">
+                                    <label>catatan(bila di perlukan)</label>
+                                    <textarea  class="form-control" rows="5"></textarea>
+                                  </div>
+                                </form>
                               </div>
-                              <div class="modal-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, exercitationem commodi accusamus unde assumenda, atque quia nihil dolore, similique suscipit alias sint voluptates enim rerum distinctio ad? Minus, labore dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, qui dicta minus culpa tempore suscipit minima labore quas, ratione molestias, numquam consequatur iusto praesentium! Velit accusamus atque neque? Placeat, perspiciatis?
-                                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ducimus quibusdam veritatis corrupti culpa ut omnis quidem rem nisi libero molestias, tempore ratione voluptas rerum aperiam deserunt adipisci impedit voluptatum.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore odit doloremque obcaecati optio excepturi ipsa, ex totam maxime ratione neque tenetur. Dolorem aut magni quos officia atque earum dignissimos.
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat, voluptate hic in itaque nemo magni? Autem, voluptatibus eaque, recusandae praesentium rem dolorum labore voluptate ullam laborum molestiae nesciunt non!
-                                </p>
-                                
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-4 g-4">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Ketiga</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="modala text-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                          Launch demo modal
-                        </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, exercitationem commodi accusamus unde assumenda, atque quia nihil dolore, similique suscipit alias sint voluptates enim rerum distinctio ad? Minus, labore dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, qui dicta minus culpa tempore suscipit minima labore quas, ratione molestias, numquam consequatur iusto praesentium! Velit accusamus atque neque? Placeat, perspiciatis?
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae ducimus quibusdam veritatis corrupti culpa ut omnis quidem rem nisi libero molestias, tempore ratione voluptas rerum aperiam deserunt adipisci impedit voluptatum.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempore odit doloremque obcaecati optio excepturi ipsa, ex totam maxime ratione neque tenetur. Dolorem aut magni quos officia atque earum dignissimos.
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat, voluptate hic in itaque nemo magni? Autem, voluptatibus eaque, recusandae praesentium rem dolorum labore voluptate ullam laborum molestiae nesciunt non!
-                                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 g-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title text-center">DENGAN TEMAN</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="modala text-center">
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Launch demo modal
+                          </button>
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container">
+                                    <form>
+                                      <div class="form-grup">
+                                        <label>nama lengkap</label>
+                                        <input type="text" name="" class="form-control" placeholder="masukan nama lengkap anda">
+                                      </div>
+                  
+                                      <div class="form-grup">
+                                        <label>email</label>
+                                        <input type="email" name="" class="form-control" placeholder="masukan email anda">
+                                      </div>
+                  
+                                      <div class="form-grup">
+                                        <label>tanggal pesan</label>
+                                        <input type="date" name="" class="form-control">
+                                      </div>
+                  
+                                      <div class="form-grup">
+                                        <label>tiket</label>
+                                        <input type="text" name="" class="form-control" placeholder="jumlah tiket">
+                                      </div>
                                       
-                                    </div>
-                                    <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                      <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
+                                      <div class="form-grup">
+                                        <label>catatan(bila di perlukan)</label>
+                                        <textarea  class="form-control" rows="5"></textarea>
+                                      </div>
+                                    </form>
                                   </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  </div>
+                        </div>
+                      </div>
                 </section>
                 <!--akhir dari info-->
                 
                 <!--About -->
         <section id="about">
           <div class="container">
-            <h1 class="text-center" style="padding-bottom:50px;">TIGA GUNUNG TERFAVORIT</h1>
+            <h1 class="text-center" style="padding-bottom:50px;">TIGA TEMPAT DESTINASI TERBAIK</h1>
                 <div class="row" style="padding-bottom: 50px;">
                   <div class="col-md-6 aboutkiri" data-aos="fade-right">
-                    <h3>RINJANI</h3>
-                    <img src="assets/rinjani.jpg" class="img-rounded coba" width="90%"/>
+                    <h3 style="margin-left:150px;">BALI</h3>
+                    <img src="assets/bali.jpg" class="img-rounded coba" width="90%"/>
                   </div>
                   <div class="col-md-6" style="padding-top:100px" data-aos="fade-left">
-                      <p>Dengan ketinggian 3.726 mdpl dan terletak di utara Pulau Lombok, Gunung Rinjani merupakan gunung berapi kedua tertinggi di Indonesia. Masuk dalam kawasan Taman Nasional Gunung Rinjani dan dikelilingi oleh hutan dan semak belukar seluas 76.000 hektar merupakan pemandangan yang asri bagi Gunung Rinjani.</p>
+                      <p>bali dengan sejuta ceritannya mulai dari pemandangan alam yang menakjubkan. kebudayaan yang selalu di pertahankan. bagi yang hobi hunting makanan bisa berburu makanan juga dan untuk yang ingin staycation banyak penginapan murah yang fasilitasnya sangant bagus</p>
                   </div>
                 </div>
                 <div class="row" style="padding-bottom: 50px;">
                     <div class="col-md-6 aboutkiri" data-aos="fade-right">
-                      <h3>SEMERU</h3>
-                        <img src="assets/semeru.png" class="img-rounded coba" width="90%"/>
+                      <h3 style="margin-left:100px;">RAJA AMPAT</h3>
+                        <img src="assets/raja_ampat.jpg" class="img-rounded coba" width="90%"/>
                     </div>
                     <div class="col-md-6" style="padding-top:100px" data-aos="fade-left">
-                        <p>Semeru yang mempunyai ketinggian 3.676 meter di atas permukaan laut (mdpl), selain menjadi gunung tertinggi di Jawa, juga merupakan satu dari tujuh puncak tertinggi di Indonesia yang mewakili 5 pulau besar dan 2 kepulauan. Sejak lama, kawasan Semeru memang terkenal akan alamnya yang cantik dan mempunyai tempat tersendiri bagi masyarakat sekitarnya dan penganut Hindu.</p>
+                        <p>raja ampat surganya bawah laut beserta surganya terumbu karang dengan gugusan pulau karang menjadi pemandangan yang identik di raja ampat. selain dua faktor tersebut raja ampat juga menyuguhkan beberapa destinasi antara lain bird  watching yang memberikan suguhan pemandangan burung surga yaitu cendrawasih, pecinta bunga akan sangat bahagia karena di raja ampat surganya dari tanaman bunga anggrek yang sangat bagus, danau berisi ubur-ubur yang tidak menyengat, ada 12 suku adat dengan ciri khas yang unik, selain keindahan dan sukunnya di raja ampat juga ada kuliner yang menjajakan makanan unik salah satunya cacing laut goreng ingin mencoba?</p>
                     </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6 aboutkiri" data-aos="fade-right">
-                    <h3>BROMO</h3>
-                      <img src="assets/bromo.jpg" class="img-rounded coba" width="90%"/>
+                    <h3 style="margin-left:80px;">PULAU KOMODO</h3>
+                      <img src="assets/komodo.jpg" class="img-rounded coba" width="90%"/>
                   </div>
                     <div class="col-md-6" style="padding-top:100px" data-aos="fade-left">
-                        <p>Keindahan Gunung Bromo yang berada di dalam Kawasan Gunung Semeru memang sudah terkenal hingga ke mancanegara. Gunung ini dianggap suci oleh masyarakat Tengger, suku yang mendiami wilayah Gunung Bromo. Nama Bromo sendiri diambil dari nama dewa utama umat hindu yaitu Brahma.</p>
+                        <p>suguhan yang di berikan dari taman nasional komodo sudah jelas kalian bisa melihat komodo lebih dekat di habitat aslinya, selain dengan komodo ada banyak fauna juga di sana, surga dari pecinta diving bahkan di anggap tempat diving kelas dunia, iklim dan geografisnya yang unik, pantai pink yang menawan, desa tradisional di pulau mesa, bagi kalian anak indi maka cocok sekali karena di sana panorama sunset yang cantik di pulau kalong, snorkling di pulau kanawa, </p>
                     </div>
                 </div>
             </div>
@@ -220,12 +317,242 @@
 
                 <!-- Section Locatiom -->
     <section id="lokasi">
-        <div class="container-fluid">
-            <h1 class="text-center" style="padding-bottom:20px; color:black;">Location</h1>
-            <div class="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10674.763549968011!2d107.13669360128542!3d-6.802148287832404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852e697990cef%3A0x2ddbb36bc8af404e!2sUniversitas%20Suryakancana!5e0!3m2!1sid!2sid!4v1664872760717!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"></iframe>
+        
+  <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
+    <div class="carousel-inner carousel-buttom">
+      <div class="carousel-item active">
+        <div class="cards-wraper">
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/j.jpg" alt="...">
             </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/k.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/l.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wraper">
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/k.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">a</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/k.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/l.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-wraper">
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/l.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">b</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/k.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card-buttom">
+            <div class="image-wraper">
+              <img src="assets/l.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">p</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev kembali" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next selanjutnya" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div id="carouselExampleControlsSmallScreen" class="carousel slide d-sm-none" data-bs-ride="carousel">
+    <div class="carousel-inner carousel-buttom">
+      <div class="carousel-item active">
+         <div class="card-buttom">
+        <div class="image-wraper">
+          <img src="assets/b.jpeg" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">p</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/c.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/d.png" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/f.jpeg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/g.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/i.jpeg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/j.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/k.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-buttom">
+          <div class="image-wraper">
+            <img src="assets/l.jpg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">p</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev kembali" type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next selanjutnya" type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
     </section>
 <!--akhir dari lokasi-->
 
@@ -293,20 +620,12 @@
       </div>
       <div class="col-md-5 col-lg-4">
         <div class="text-center text-md-right">
-          <ul class="list-unstyled list-inline">
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-github"></i></a>
-            </li>
-          </ul>
+          <div class="sosmed">
+            <a href="#" class="btn1"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="btn1"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="btn1"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn1"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </div>
     </div>
