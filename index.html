@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>website</title>
     <style>
@@ -17,16 +18,14 @@
 }
 .coba1{
   padding: 100px;
-  background: url(/assets/backgroud.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .laptop img {
             height:100vh;
+            width: 40vw;
         }
 .hp img {
-            height:80vh;
+            height:60vh;
         }
 
     </style>
@@ -34,28 +33,31 @@
 <body>
 
     <!--navbar-->
-    <nav class="navbar  navbar-expand-lg bg-transperancy fixed-top ">
+    <nav class="navbar  navbar-expand-lg bg-dark fixed-top ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#home">yu JALAN</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav " aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active rounded-fill" aria-current="page" href="#home">utama</a>
+              <a class="nav-link active rounded-fill" aria-current="page" href="#home">Utama</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#info">informasi</a>
+              <a class="nav-link active" aria-current="page" href="#penawaran">Informasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">tentang</a>
+              <a class="nav-link active" aria-current="page" href="#favorit">Tentang</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#lokasi">lokasi</a>
+              <a class="nav-link active" aria-current="page" href="#transfortasi">Transportasi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#kontak">kontak</a>
+              <a class="nav-link active" aria-current="page" href="#biodata">Biodata</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#kontak">Kontak</a>
             </li>
           </ul>
         </div>
@@ -64,40 +66,41 @@
     <!--akhir dari navbar-->
     
     <!--home-->
-    <div id="carouselExampleCaptions" class="carousel slide d-none d-sm-block" data-bs-ride="false">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item laptop active">
-          <img src="assets/1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+    <section id="home">
+      <div id="carouselExampleCaptions" class="carousel slide d-none d-sm-block" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item laptop active">
+            <img src="assets/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item laptop">
+            <img src="assets/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item laptop">
+            <img src="assets/4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
           </div>
         </div>
-        <div class="carousel-item laptop">
-          <img src="assets/2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item laptop">
-          <img src="assets/4.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -140,27 +143,28 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </section>
     <!--akhir dari home-->
     
     <!--info-->
-    <section id="info">
-        <h1 class="text-center" style="padding-bottom:50px;">Information</h1>
-        <div class="coba1">
+    <section id="penawaran">
+      <h1 class="text-center" style="padding-bottom:50px;">Information</h1>
+      <div class="coba1">
         <div class="row">
           <div class="col-md-4 g-4">
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title text-center">SENDIRI</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Kamu seorang solo traveler?. cocok banget pesan pesan tiket disini harga murah plus dapet diskon juga</p>
                 <div class="modala text-center">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
+                    pesan tiket
                   </button>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">tiketing</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -170,7 +174,7 @@
                                 <label>nama lengkap</label>
                                 <input type="text" name="" class="form-control" placeholder="masukan nama lengkap anda">
                               </div>
-          
+                              
                               <div class="form-grup">
                                 <label>email</label>
                                 <input type="email" name="" class="form-control" placeholder="masukan email anda">
@@ -194,30 +198,32 @@
                           </div>
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">keluar</button>
+                          <button type="button" class="btn btn-primary">beli</button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                  10%
               </div>
                 </div>
               </div>
-              <div class="col-md-4 g-4">
+              <div class="col-md-4 g-4" data-aos="zoom-in" data-aos-delay="50">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title text-center">KELUARGA</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">liburan keluar? ga jadi masalah. kamu bisa jadiin liburan keluarga kamu jadi menyenangkan yu pesan</p>
                     <div class="modala text-center">
                       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Launch demo modal
+                        pesan tiket
                       </button>
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">tiketing</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -251,30 +257,32 @@
                               </div>
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">keluar</button>
+                              <button type="button" class="btn btn-primary">beli</button>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                      15%
                   </div>
                     </div>
                   </div>
-                  <div class="col-md-4 g-4">
+                  <div class="col-md-4 g-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card">
                       <div class="card-body">
                         <h4 class="card-title text-center">DENGAN TEMAN</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">bakalan jadi berkesan banget nih hari liburan bareng teman. yu beli beli tiket di sini</p>
                         <div class="modala text-center">
                           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Launch demo modal
+                            pesan tiket
                           </button>
                           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">tiketing</h1>
                                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -308,21 +316,23 @@
                                   </div>
                                 </div>
                                 <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">keluar</button>
+                                  <button type="button" class="btn btn-primary">beli</button>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                          20%
                       </div>
                         </div>
                       </div>
-                </section>
-                <!--akhir dari info-->
+    </section>
+    <!--akhir dari info-->
                 
-                <!--About -->
-        <section id="about">
+    <!--About -->
+    <section id="favorit">
           <div class="container">
             <h1 class="text-center" style="padding-bottom:50px;">TIGA TEMPAT DESTINASI TERBAIK</h1>
                 <div class="row" style="padding-bottom: 50px;">
@@ -330,7 +340,7 @@
                     <h3 style="margin-left:150px;">BALI</h3>
                     <img src="assets/bali.jpg" class="img-rounded coba" width="90%"/>
                   </div>
-                  <div class="col-md-6" style="padding-top:100px" data-aos="fade-left">
+                  <div class="col-md-6" style="padding-top:100px" data-aos="fade-left" data-aos-delay="300">
                       <p>bali dengan sejuta ceritannya mulai dari pemandangan alam yang menakjubkan. kebudayaan yang selalu di pertahankan. bagi yang hobi hunting makanan bisa berburu makanan juga dan untuk yang ingin staycation banyak penginapan murah yang fasilitasnya sangant bagus</p>
                   </div>
                 </div>
@@ -339,7 +349,7 @@
                       <h3 style="margin-left:100px;">RAJA AMPAT</h3>
                         <img src="assets/raja_ampat.jpg" class="img-rounded coba" width="90%"/>
                     </div>
-                    <div class="col-md-6" style="padding-top:100px" data-aos="fade-left">
+                    <div class="col-md-6" style="padding-top:100px" data-aos="fade-left" data-aos-delay="300">
                         <p>raja ampat surganya bawah laut beserta surganya terumbu karang dengan gugusan pulau karang menjadi pemandangan yang identik di raja ampat. selain dua faktor tersebut raja ampat juga menyuguhkan beberapa destinasi antara lain bird  watching yang memberikan suguhan pemandangan burung surga yaitu cendrawasih, pecinta bunga akan sangat bahagia karena di raja ampat surganya dari tanaman bunga anggrek yang sangat bagus, danau berisi ubur-ubur yang tidak menyengat, ada 12 suku adat dengan ciri khas yang unik, selain keindahan dan sukunnya di raja ampat juga ada kuliner yang menjajakan makanan unik salah satunya cacing laut goreng ingin mencoba?</p>
                     </div>
                 </div>
@@ -348,17 +358,17 @@
                     <h3 style="margin-left:80px;">PULAU KOMODO</h3>
                       <img src="assets/komodo.jpg" class="img-rounded coba" width="90%"/>
                   </div>
-                    <div class="col-md-6" style="padding-top:100px" data-aos="fade-left">
+                    <div class="col-md-6" style="padding-top:100px" data-aos="fade-left" data-aos-delay="300">
                         <p>suguhan yang di berikan dari taman nasional komodo sudah jelas kalian bisa melihat komodo lebih dekat di habitat aslinya, selain dengan komodo ada banyak fauna juga di sana, surga dari pecinta diving bahkan di anggap tempat diving kelas dunia, iklim dan geografisnya yang unik, pantai pink yang menawan, desa tradisional di pulau mesa, bagi kalian anak indi maka cocok sekali karena di sana panorama sunset yang cantik di pulau kalong, snorkling di pulau kanawa, </p>
                     </div>
                 </div>
             </div>
-            </section>
-            <!--akhir dari about-->
+    </section>
+    <!--akhir dari about-->
 
-                <!-- Section Locatiom -->
-    <section id="lokasi">
-        
+    <!-- Section transformasi -->
+    <section id="transfortasi">
+      <h1 class="text-center"  style="padding-bottom:50px; color:white;">TRANSFORTASI YANG KAMI SEDIAKAN</h1>
   <div id="carouselExampleControls" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
     <div class="carousel-inner carousel-buttom">
       <div class="carousel-item active">
@@ -367,30 +377,24 @@
             <div class="image-wraper">
               <img src="assets/bus.jpg" alt="...">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">p</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body warna">
+              <h5 class="card-title text-center">BUS</h5>
             </div>
           </div>
           <div class="card-buttom">
             <div class="image-wraper">
               <img src="assets/ferry.jpg" alt="...">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">p</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body warna">
+              <h5 class="card-title text-center">KAPAL FERRY</h5>
             </div>
           </div>
           <div class="card-buttom">
             <div class="image-wraper">
               <img src="assets/kreta.jpg" alt="...">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">p</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body warna">
+              <h5 class="card-title text-center">KERETA</h5>
             </div>
           </div>
         </div>
@@ -401,30 +405,24 @@
             <div class="image-wraper">
               <img src="assets/pesawat.jpg" alt="...">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">a</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body warna">
+              <h5 class="card-title text-center">PESAWAT</h5>
             </div>
           </div>
           <div class="card-buttom">
             <div class="image-wraper">
               <img src="assets/pesiar.png" alt="...">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">p</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body warna">
+              <h5 class="card-title text-center">KAPAL PESIAR</h5>
             </div>
           </div>
           <div class="card-buttom">
             <div class="image-wraper">
               <img src="assets/samudra.jpg" alt="...">
             </div>
-            <div class="card-body">
-              <h5 class="card-title">p</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body warna">
+              <h5 class="card-title text-center">KAPAL SAMUDRA</h5>
             </div>
           </div>
         </div>
@@ -439,7 +437,6 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  
   <div id="carouselExampleControlsSmallScreen" class="carousel slide d-sm-none" data-bs-ride="carousel">
     <div class="carousel-inner carousel-buttom">
       <div class="carousel-item active">
@@ -447,10 +444,8 @@
         <div class="image-wraper mobile">
           <img src="assets/bus.jpg" alt="...">
         </div>
-        <div class="card-body">
-          <h5 class="card-title">p</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card-body warna">
+          <h5 class="card-title text-center">BUS</h5>
         </div>
       </div>
       </div>
@@ -459,10 +454,8 @@
           <div class="image-wraper mobile">
             <img src="assets/ferry.jpg" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">p</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body warna">
+            <h5 class="card-title text-center">KAPAL FERRY</h5>
           </div>
         </div>
       </div>
@@ -471,10 +464,8 @@
           <div class="image-wraper mobile">
             <img src="assets/kreta.jpg" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">p</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body warna">
+            <h5 class="card-title text-center">KERETA</h5>
           </div>
         </div>
       </div>
@@ -483,10 +474,8 @@
           <div class="image-wraper mobile">
             <img src="assets/pesawat.jpg" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">p</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body warna">
+            <h5 class="card-title text-center">PESAWAT</h5>
           </div>
         </div>
       </div>
@@ -495,10 +484,8 @@
           <div class="image-wraper mobile">
             <img src="assets/pesiar.png" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">p</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card-body warna">
+            <h5 class="card-title text-center">KAPAL PESIAR</h5>
           </div>
         </div>
       </div>
@@ -507,11 +494,8 @@
           <div class="image-wraper mobile">
             <img src="assets/samudra.jpg" alt="...">
           </div>
-          <div class="card-body">
-            <h5 class="card-title">p</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+          <div class="card-body warna">
+            <h5 class="card-title text-center">KAPAL SAMUDRA</h5>
         </div>
       </div>
     </div>
@@ -524,8 +508,24 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-    </section>
-<!--akhir dari lokasi-->
+  </section>
+<!--akhir dari transformasi-->
+
+<!--section biodata-->
+<section id="biodata">
+  <div class="container data-diri">
+        <div class="row" style="padding-bottom: 50px;">
+          <div class="col-md-6 data-gambar" data-aos="fade-right">
+            <img src="assets/diri1.jpg" class="img-rounded coba" width="90%">
+          </div>
+          <div class="col-md-6 data" style="padding-top:100px" data-aos="fade-left">
+              <p>Nama : Mohamad Ibnu Maggie</p>
+              <p>TTD  : cianjur. 30-Oktober-2001</p>
+          </div>
+        </div>
+    </div>
+</section>
+<!--akhir section biodata-->
 
  <!-- kontak+footer-->
  <section id="kontak"  style="padding-top:50px;">
@@ -603,9 +603,21 @@
   </div>
 </footer>
 </section>
-<!--akhir dari kontak-->
+<!--akhir dari kontak+footer-->
 </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          once:true,
+        });
+    </script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration: 2, delay: 1.5, text: ''});
+    </script>-->
+    </body>
 </html>

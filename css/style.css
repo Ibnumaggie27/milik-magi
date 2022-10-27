@@ -3,21 +3,26 @@ body{
     min-height: 100vh;
     background: linear-gradient(#7597de,#2b1055);
 }
+
+/*navbar*/
 .navbar-nav {
     padding-right:50px;
-}
-section#info, section#about{
-    padding:50px 0px;
-    color:white;
 }
 .nav-item {
     padding-right: 20px;
 }
+/*akhir dari navbar*/
+
+/*pewarnaan section*/
+section#penawaran, section#favorit, section#biodata{
+    padding:50px 0px;
+    color:white;
+}
+/*akhir dari pewarnaan section*/
+
+/*css untuk favorit*/
 .container-fluid a, #navbarNav a {
   color:white;
-}
-.card-body {
-  color:black;
 }
 .container img{
   border-radius: 50%;
@@ -29,6 +34,16 @@ section#info, section#about{
 .coba:hover{
   transform: scale(1.1);
 }
+/*akhir untuk favorit*/
+
+/*card*/
+.card-body {
+  color:black;
+}
+/*akhir card*/
+
+
+/*bagian sosialmedia*/
 .sosmed .btn1{
     display: inline-block;
     width: 10px;
@@ -81,6 +96,7 @@ section#info, section#about{
         left: -10%;
     }
 }
+/*akhir sosial media*/
 
 /* carausel buttom*/
 .card-buttom{
@@ -137,4 +153,25 @@ section#info, section#about{
     height: 50vw;
     text-align: center;
   }
+  .warna{
+    color:white;
+  }
   /*akhir carousel buttom*/
+
+  /*biodata*/
+  .data-diri img{
+    border-radius: 10%;
+    height: 300px;
+    width: 300px;
+  }
+  .data-gambar img{
+    margin-left: 35px;
+  }
+  .data p{
+    padding-left: 75px;
+  }
+  /*akhir biodata*/
+
+  .custom-toggler {
+    border-color: lightgreen;
+}
